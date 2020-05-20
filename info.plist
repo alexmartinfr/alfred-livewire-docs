@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.alexmartinfr.alfred-livewire-docs</string>
+	<key>category</key>
+	<string>Productivity</string>
+	<key>connections</key>
+	<dict>
+		<key>1B63F30F-2C4C-42EB-87EE-0E39722DFCA6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1B9170F0-DEE3-411E-9471-FA00A0A5098F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Alex Martin</string>
+	<key>description</key>
+	<string>An ultra-fast Livewire docs search workflow</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Livewire Docs</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+				<key>utf8</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>1B9170F0-DEE3-411E-9471-FA00A0A5098F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>4</integer>
+				<key>keyword</key>
+				<string>lw</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Searching docs for "{query}"...</string>
+				<key>script</key>
+				<string>php livewire.php "{query}"</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>Search the Livewire docs...</string>
+				<key>title</key>
+				<string>Livewire Docs</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>1B63F30F-2C4C-42EB-87EE-0E39722DFCA6</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string># Laravel Livewire Docs Workflow for Alfred
+
+An ultra-fast Laravel Livewire docs search workflow for Alfred.
+
+## Installation
+
+1. Download the latest version of the workflow:
+https://github.com/AlexMartinFR/alfred-livewire-docs/releases/download/v0.1.0/livewire-docs.alfredworkflow
+
+2. Install the workflow by double-clicking the `.alfredworkflow` file
+
+3. You can add the workflow to a category, then click "Import" to finish importing. You'll now see the workflow listed in the left sidebar of your Workflows preferences pane.
+
+## Usage
+
+Just type `lw` followed by your search query:
+
+```
+lw &lt;query&gt;
+lw component
+```
+
+Either press `⌘Y` to Quick Look the result, or press `&lt;enter&gt;` to open it in your web browser.
+
+## Credits
+
+This workflow is based on Till Kruss' Laravel Docs workflow:
+https://github.com/tillkruss/alfred-laravel-docs</string>
+	<key>uidata</key>
+	<dict>
+		<key>1B63F30F-2C4C-42EB-87EE-0E39722DFCA6</key>
+		<dict>
+			<key>xpos</key>
+			<integer>225</integer>
+			<key>ypos</key>
+			<integer>150</integer>
+		</dict>
+		<key>1B9170F0-DEE3-411E-9471-FA00A0A5098F</key>
+		<dict>
+			<key>xpos</key>
+			<integer>535</integer>
+			<key>ypos</key>
+			<integer>150</integer>
+		</dict>
+	</dict>
+	<key>version</key>
+	<string></string>
+	<key>webaddress</key>
+	<string>https://github.com/AlexMartinFR/alfred-livewire-docs/</string>
+</dict>
+</plist>
