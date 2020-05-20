@@ -12,8 +12,8 @@ $subtext = empty($_ENV['alfred_theme_subtext']) ? '0' : $_ENV['alfred_theme_subt
 
 $workflow = new Workflow;
 $parsedown = new Parsedown;
-$algolia = new Algolia('BH4D9OD16A', 'cec0554d960fa30b4b0b610f372a8636'); // Pest PHP
-AlgoliaUserAgent::addSuffixUserAgentSegment('Pest PHP Docs Alfred Workflow', '0.1.0');
+$algolia = new Algolia('BH4D9OD16A', 'cec0554d960fa30b4b0b610f372a8636'); // Livewire
+AlgoliaUserAgent::addSuffixUserAgentSegment('Livewire Docs Alfred Workflow', '0.1.1');
 $index = $algolia->initIndex('livewire-framework');
 $search = $index->search($query);
 $results = $search['hits'];
@@ -21,7 +21,7 @@ $results = $search['hits'];
 $subtextSupported = $subtext === '0' || $subtext === '2';
 
 if (empty($results)) {
-    $google = sprintf('https://www.google.com/search?q=%s', rawurlencode("pestphp {$query}"));
+    $google = sprintf('https://www.google.com/search?q=%s', rawurlencode("laravel livewire {$query}"));
 
     $workflow->result()
         ->title($subtextSupported ? 'Search Google' : 'No match found. Search Google...')
@@ -34,9 +34,9 @@ if (empty($results)) {
     $workflow->result()
         ->title($subtextSupported ? 'Open Docs' : 'No match found. Open docs...')
         ->icon('icon.png')
-        ->subtitle('No match found. Open https://pestphp.com/docs/installation/...')
-        ->arg('https://pestphp.com/docs/installation/')
-        ->quicklookurl('https://pestphp.com/docs/installation/')
+        ->subtitle('No match found. Open https://laravel-livewire.com/docs/...')
+        ->arg('https://laravel-livewire.com/docs/')
+        ->quicklookurl('https://laravel-livewire.com/docs/')
         ->valid(true);
 
     echo $workflow->output();

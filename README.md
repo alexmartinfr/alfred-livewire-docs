@@ -6,7 +6,7 @@ An ultra-fast Laravel Livewire docs search workflow for [Alfred](https://www.alf
 
 ## Installation
 
-1. [Download the latest version](https://github.com/AlexMartinFR/alfred-livewire-docs/releases/download/v0.1.0/livewire-docs.alfredworkflow)
+1. [Download the latest version](https://github.com/AlexMartinFR/alfred-livewire-docs/releases/download/v0.1.1/livewire-docs.alfredworkflow)
 2. Install the workflow by double-clicking the `.alfredworkflow` file
 3. You can add the workflow to a category, then click "Import" to finish importing. You'll now see the workflow listed in the left sidebar of your Workflows preferences pane.
 

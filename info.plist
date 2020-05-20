@@ -109,7 +109,7 @@ An ultra-fast Laravel Livewire docs search workflow for Alfred.
 ## Installation
 
 1. Download the latest version of the workflow:
-https://github.com/AlexMartinFR/alfred-livewire-docs/releases/download/v0.1.0/livewire-docs.alfredworkflow
+https://github.com/AlexMartinFR/alfred-livewire-docs/releases/download/v0.1.1/livewire-docs.alfredworkflow
 
 2. Install the workflow by double-clicking the `.alfredworkflow` file
 
