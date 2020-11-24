@@ -15,7 +15,9 @@ $parsedown = new Parsedown;
 $algolia = new Algolia('BH4D9OD16A', 'cec0554d960fa30b4b0b610f372a8636'); // Livewire
 AlgoliaUserAgent::addSuffixUserAgentSegment('Livewire Docs Alfred Workflow', '0.1.1');
 $index = $algolia->initIndex('livewire-framework');
-$search = $index->search($query);
+$search = $index->search($query, ['facetFilters' => [
+    sprintf('version:%s', $branch ?: '2.x'),
+]]);
 $results = $search['hits'];
 
 $subtextSupported = $subtext === '0' || $subtext === '2';
