@@ -13,7 +13,7 @@ $subtext = empty($_ENV['alfred_theme_subtext']) ? '0' : $_ENV['alfred_theme_subt
 $workflow = new Workflow;
 $parsedown = new Parsedown;
 $algolia = new Algolia('BH4D9OD16A', 'cec0554d960fa30b4b0b610f372a8636'); // Livewire
-AlgoliaUserAgent::addSuffixUserAgentSegment('Livewire Docs Alfred Workflow', '0.1.1');
+AlgoliaUserAgent::addSuffixUserAgentSegment('Livewire Docs Alfred Workflow', '0.1.2');
 $index = $algolia->initIndex('livewire-framework');
 $search = $index->search($query, ['facetFilters' => [
     sprintf('version:%s', $branch ?: '2.x'),
