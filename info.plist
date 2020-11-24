@@ -4,8 +4,6 @@
 <dict>
 	<key>bundleid</key>
 	<string>com.alexmartinfr.alfred-livewire-docs</string>
-	<key>category</key>
-	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
 		<key>1B63F30F-2C4C-42EB-87EE-0E39722DFCA6</key>
@@ -106,14 +104,16 @@
 
 An ultra-fast Laravel Livewire docs search workflow for Alfred.
 
+
 ## Installation
 
 1. Download the latest version of the workflow:
-https://github.com/AlexMartinFR/alfred-livewire-docs/releases/download/v0.1.1/livewire-docs.alfredworkflow
+https://github.com/AlexMartinFR/alfred-livewire-docs/releases/download/v0.1.2/livewire-docs.alfredworkflow
 
 2. Install the workflow by double-clicking the `.alfredworkflow` file
 
 3. You can add the workflow to a category, then click "Import" to finish importing. You'll now see the workflow listed in the left sidebar of your Workflows preferences pane.
+
 
 ## Usage
 
@@ -125,6 +125,17 @@ lw component
 ```
 
 Either press `⌘Y` to Quick Look the result, or press `&lt;enter&gt;` to open it in your web browser.
+
+
+## Versions
+
+Edit the workflow environment variable to query the documentation for a different Livewire version.
+
+Currently available versions:
+
+1.x
+2.x
+
 
 ## Credits
 
@@ -147,8 +158,15 @@ https://github.com/tillkruss/alfred-laravel-docs</string>
 			<integer>150</integer>
 		</dict>
 	</dict>
+	<key>variables</key>
+	<dict>
+		<key>branch</key>
+		<string>2.x</string>
+	</dict>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
-	<string></string>
+	<string>0.1.2</string>
 	<key>webaddress</key>
 	<string>https://github.com/AlexMartinFR/alfred-livewire-docs/</string>
 </dict>
