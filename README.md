@@ -30,8 +30,8 @@ Edit the workflow environment variable to query the documentation for a differen
 
 Currently available versions:
 
-1.x
-2.x
+- 1.x
+- 2.x
 
 
 ## Credits
