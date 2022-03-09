@@ -78,11 +78,11 @@
 				<string>Searching docs for "{query}"...</string>
 				<key>script</key>
 				<string>if [ -f "/opt/homebrew/bin/php" ]; then
-    /opt/homebrew/bin/php laravel.php "{query}"
+    /opt/homebrew/bin/php livewire.php "{query}"
 elif [ -f "/usr/local/bin/php" ]; then
-    /usr/local/bin/php laravel.php "{query}"
+    /usr/local/bin/php livewire.php "{query}"
 elif [ -f "/usr/bin/php" ]; then
-    /usr/bin/php laravel.php "{query}"
+    /usr/bin/php livewire.php "{query}"
 fi</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
