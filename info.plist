@@ -77,7 +77,13 @@
 				<key>runningsubtext</key>
 				<string>Searching docs for "{query}"...</string>
 				<key>script</key>
-				<string>php livewire.php "{query}"</string>
+				<string>if [ -f "/opt/homebrew/bin/php" ]; then
+    /opt/homebrew/bin/php laravel.php "{query}"
+elif [ -f "/usr/local/bin/php" ]; then
+    /usr/local/bin/php laravel.php "{query}"
+elif [ -f "/usr/bin/php" ]; then
+    /usr/bin/php laravel.php "{query}"
+fi</string>
 				<key>scriptargtype</key>
 				<integer>0</integer>
 				<key>scriptfile</key>
@@ -166,7 +172,7 @@ https://github.com/tillkruss/alfred-laravel-docs</string>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.1.2</string>
+	<string>0.1.3</string>
 	<key>webaddress</key>
 	<string>https://github.com/AlexMartinFR/alfred-livewire-docs/</string>
 </dict>
